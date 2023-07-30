@@ -1,0 +1,156 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    background-color: #fefefe;
+}
+.line{
+    background-color: #444;
+    width: 100%;
+    height: 13rem;
+    margin-top: 12rem;
+    z-index: -1;
+    animation-name: line;
+    animation-duration: 3s;
+}
+@keyframes line{
+ from{width: 0%}
+ to{width: 100%}
+}
+cite{
+    color: #e74848;
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+.container{
+    z-index: 2;
+    position: absolute;
+    top: 0;
+}
+.myslides{
+    display: none;
+}
+.pic{
+    border: 3px solid #444;
+    background-color: #fefefe;
+    position: absolute;
+    top: 2.5rem;
+    left: 7rem;
+    opacity: 1;
+    animation-name: ap;
+    animation-duration: 3s;
+}
+@keyframes ap{
+    from{opacity: .0;}
+    to{opacity: 1;}
+}
+img{
+    width: 35vw;
+    height: 45vh;
+    border: 4px solid #444;
+    margin: 20px;
+}
+.quote{
+    border: 3px solid #444;
+    color: #e74848;
+    color: #fefefe;
+    position: absolute;
+    top: 14rem;
+    left: 47rem;
+    background-color: #fefefe;
+    opacity: 1;
+    animation-name: ap;
+    animation-duration: 3s;
+}
+.quote div{
+    width: 35vw;
+    height: 45vh;
+    margin: 20px;
+    background-color: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h3{
+    font-size: 1.3rem;
+    letter-spacing: .1rem;
+    word-spacing: .1rem;
+    text-align: center;
+}
+a{
+    color: #e74848;
+    font-size: 3rem;
+    text-decoration: none;
+    width: 3rem;
+    text-align: center;
+    height: 4.5rem;
+    border-radius: 100%;
+    animation-name: ap;
+    animation-duration: 3s;
+}
+a:hover{
+    cursor: pointer;
+    background-color: #fefefe;
+    opacity: 1;
+}
+.prev{
+    position: absolute;
+    top: 42vh;
+    left: 2vw;
+}
+.next{
+    position: absolute;
+    top: 42vh;
+    left: 95vw;
+}
+
+
+.l{
+    transform: rotate(4deg);
+}
+.r{
+    transform: rotate(-6deg);
+}
+
+@media(max-width: 600px) {
+    .l{
+        transform: rotate(8deg);
+    }
+    .r{
+        transform: rotate(-8deg);
+    }
+    .line{
+        height: 15rem;
+        position: absolute;
+        top: 10vh;
+    }
+    .pic{
+        top: 8vh;
+        left: 6vw;
+    }
+    img{
+        width: 300px;
+        height: 200px;
+    }
+    .quote{
+        top: 30rem;
+        left: 6vw;
+    }
+    .quote div{
+        width: 300px;
+        height: 200px;
+    }
+    h3{
+        font-size: .8rem;
+    }
+    .prev{
+        top: 40vh;
+        left: 1vw;
+    }
+    .next{
+        top: 40vh;
+        left: 90vw;
+    }
+    
+}
