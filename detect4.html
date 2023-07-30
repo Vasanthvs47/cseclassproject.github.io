@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detection
+    </title>
+    <style>
+        body{
+           background-color:white;
+            min-height: 100vh;
+            height: auto;
+            display:grid;
+            line-height: 1.5;
+            place-content: center;
+        }
+        .main{
+            position: relative;
+  
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+          position: relative;
+        }
+        .main .sub_main{
+            background-color: #020230;
+            text-align: center;
+            color:#f7fafd;
+            font-size: 40px;
+            position: relative;
+        }   
+        .what{
+            text-align: center;
+            width: 100%;
+            font-size: 25px;
+            background-image: url("images/section.png");
+            background-repeat:no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+        }
+        
+        .what p{
+            color: #f7fafd;
+        }
+        .what h3{
+            color: rgb(4, 241, 43);
+            width: 100%;
+        }
+        .what .ans img{
+            width: 50%;
+        }
+        .type h3{
+            width: 100%;
+            color: blue;
+            font-size: 25px;
+            
+
+        }
+        .type .types{
+
+            background-color:#014b4b;
+            width: 100%;
+            text-align: center;
+
+
+            
+
+        }
+        .types a{
+            font-size: 19px;
+            text-decoration: none;
+            color:#00fc22;
+            
+        }
+        .back{
+            width: 100%;
+            position:absolute;
+            display: block;
+
+           height: 1300px;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8y0lJ_3buyphhKMM-Fpp4PuVwSqQR_H-13bX4LT_9zDMIjHCUVwdC_Yi6SzhimVdbkC4&usqp=CAU');
+            background-repeat:no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+        }
+        .define{
+            width: 75%;
+            height: 300px;
+            background: transparent;
+            margin: auto;
+        }
+        .define .def h3{
+            color: #ce1616;
+        }
+        .define .def p{
+            font-size: 25px;
+            text-align:left;
+            color: #f7fafd;
+        }
+
+
+
+    
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="sub_main">
+            <h1>Intrusion Detection</h1>
+        </div>   
+            <div class="what">
+                <h3>what is  Intrusion Detection ?</h3>
+                <div class="ans">
+                    <p>
+                        An Intrusion Detection System (IDS) is a monitoring system that detects suspicious activities and generates alerts when they are detected.
+                    </p>
+                    <img src="images/Cyber-Security.png">
+                </div>
+            </div>
+            <div class="type">
+                <div class="types">
+                    <h3>Types of Intrusion Detection System</h3>
+                    <ul>
+                        <li >
+                            <a href="#net">Network Intrusion Detection System</a>
+                        </li>
+                        <li>
+                            <a href="#infor">Network Node Intrusion Detection System</a>
+                        </li>
+                        <li id="app">
+                            <a href="#app">Host Intrusion Detection System</a>
+                        </li>
+                        <li id="oper">
+                            <a href="#oper">Protocol-Based Intrusion Detection System</a>
+                        </li>
+                        <li id="end">
+                            <a href="#end">Application Protocol-Based Intrusion Detection System</a>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+                <div class="back">
+
+                    <div class="define">
+                        <div id="net" class="def">
+                            <h3>Network Intrusion Detection System</h3>
+                            <p>
+                                A Network Intrusion Detection System (NIDS) is a solution that monitors your entire network through one or more touchpoints. To use a NIDS, you generally need to install it on a piece of hardware within your network infrastructure.
+                            </p>
+                        </div>
+                        <div id="infor" class="def">
+                            <h3>Network Node Intrusion Detection System</h3>
+                            <p>
+                                A Network Node Intrusion Detection System (NNIDS) is technically a variation of a NIDS, but since it works differently, we’ll consider it a different type of IDS.
+                            </p>
+                        </div>
+                        <div id="app" class="def">
+                            <h3>Host Intrusion Detection System</h3>
+                            <p>
+                                A Host Intrusion Detection System (HIDS) takes the device independence of NNIDS one step further. With a HIDS, you can install IDS software on every device connected to your network.
+                            </p>
+                        </div>
+                        <div id="opera" class="def">
+                            <h3>Protocol-Based Intrusion Detection System</h3>
+                            <p>
+                                A Protocol-Based Intrusion Detection System (PIDS) is a specific IDS that monitors the protocol in use. In practice, this system typically analyzes the HTTP or HTTPS protocol stream between your devices and the server.
+                            </p>
+                        </div>
+                        <div id="end" class="def">
+                            <h3>Application Protocol-Based Intrusion Detection System</h3>
+                            <p>
+                                An Application Protocol-Based Intrusion Detection System (APIDS) is a type of IDS that specializes in software app security. Typically associated with host-based intrusion detection systems (HIDS), APIDSs monitor the communications that occur between applications and the server. An APIDS is typically installed on groups of servers.
+                            </p>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </div>
+</body>
+</html>

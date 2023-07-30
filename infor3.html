@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gathering
+    </title>
+    <style>
+        body{
+           background-color:white;
+            min-height: 100vh;
+            height: auto;
+            display:grid;
+            line-height: 1.5;
+            place-content: center;
+        }
+        .main{
+            position: relative;
+  
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+          position: relative;
+        }
+        .main .sub_main{
+            background-color: #020230;
+            text-align: center;
+            color:#f7fafd;
+            font-size: 40px;
+            position: relative;
+        }   
+        .what{
+            text-align: center;
+            width: 100%;
+            font-size: 25px;
+            background-image: url("images/section.png");
+            background-repeat:no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+        }
+        .what p{
+            color: #f7fafd;
+        }
+        
+        .what h3{
+            color: rgb(4, 241, 43);
+            width: 100%;
+        }
+        .what .ans img{
+            width: 50%;
+        }
+        .type h3{
+            width: 100%;
+            color: blue;
+            font-size: 25px;
+            
+
+        }
+        .type .types{
+
+            background-color:#014b4b;
+            width: 100%;
+            text-align: center;
+
+
+            
+
+        }
+        .types a{
+            font-size: 19px;
+            text-decoration: none;
+            color:#00fc22;
+            
+        }
+        .back{
+            width: 100%;
+            position:absolute;
+            display: block;
+
+           height: 1400px;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8y0lJ_3buyphhKMM-Fpp4PuVwSqQR_H-13bX4LT_9zDMIjHCUVwdC_Yi6SzhimVdbkC4&usqp=CAU');
+            background-repeat:no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+        }
+        .define{
+            width: 75%;
+            height: 300px;
+            background: transparent;
+            margin: auto;
+        }
+        .define .def h3{
+            color: #ce1616;
+        }
+        .define .def p{
+            font-size: 25px;
+            text-align:left;
+            color: #f7fafd;
+        }
+
+
+
+    
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="sub_main">
+            <h1>Informantion Gathering</h1>
+        </div>   
+            <div class="what">
+                <h3>what is  Information Gathering ?</h3>
+                <div class="ans">
+                    <p>
+                        This information-gathering process can be both automated and manual and can involve techniques such as port scanning, vulnerability scanning, social engineering, OSINT (open-source intelligence), passive reconnaissance, and active reconnaissance.
+                    </p><img src="images/Cyber-Security.png">
+                </div>
+            </div>
+            <div class="type">
+                <div class="types">
+                    <h3>Methods of Informantion Gathering</h3>
+                    <ul>
+                        <li >
+                            <a href="#net">Social Engnieering</a>
+                        </li>
+                        <li>
+                            <a href="#infor">Footprinting</a>
+                        </li>
+                        <li id="app">
+                            <a href="#app">Network Scanning</a>
+                        </li>
+                        <li id="oper">
+                            <a href="#oper">Open-source Intelligence (OSINT)</a>
+                        </li>
+                        <li id="end">
+                            <a href="#end">vulnerability Scanning</a>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+                <div class="back">
+
+                    <div class="define">
+                        <div id="net" class="def">
+                            <h3>Social Engineering</h3>
+                            <p>
+                                Social engineering is the process of using psychological manipulation techniques to deceive people into providing sensitive information or performing certain actions. It is a form of passive reconnaissance that does not involve actively probing or interacting with a target system.
+                            </p>
+                        </div>
+                        <div id="infor" class="def">
+                            <h3>Footprinting</h3>
+                            <p>
+                                This technique involves gathering information about the target's network infrastructure and assets, such as IP addresses, WHOIS records, DNS records, and other technical details.
+                            </p>
+                        </div>
+                        <div id="app" class="def">
+                            <h3>Network Scanning</h3>
+                            <p>
+                                Network scanning is a technique used to identify active systems and open ports on a network. It is an active reconnaissance method that involves sending packets to a range of IP addresses or ports on a target system and analyzing the responses. Network scanning can be done using a variety of tools, such as ping sweeps and port scanners.
+                            </p>
+                        </div>
+                        <div id="opera" class="def">
+                            <h3>Open-source Intelligence (OSINT)</h3>
+                            <p>
+                                Open-Source Intelligence (OSINT) refers to the process of collecting, analyzing, and disseminating publicly available information. The information can be found on various sources such as the internet, social media, newspapers, publications, government reports, etc.
+                            </p>
+                        </div>
+                        <div id="end" class="def">
+                            <h3>vulnerability Scanning</h3>
+                            <p>
+                                This technique involves using specialized tools to scan a target's assets for known vulnerabilities.
+                            </p>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attacks
+    </title>
+    <style>
+        body{
+           background-color:white;
+            min-height: 100vh;
+            height: auto;
+            display:grid;
+            line-height: 1.5;
+            place-content: center;
+        }
+        .main{
+            position: relative;
+  
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+          position: relative;
+        }
+        .main .sub_main{
+            background-color: #020230;
+            text-align: center;
+            color:#f7fafd;
+            font-size: 40px;
+            position: relative;
+        }   
+        .what{
+            text-align: center;
+            width: 100%;
+            font-size: 25px;
+            background-image: url("images/section.png");
+            background-repeat:no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+        }
+        .what p{
+            color: #f7fafd;
+        }
+        
+        .what h3{
+            color: rgb(4, 241, 43);
+            width: 100%;
+        }
+        .what .ans img{
+            width: 50%;
+        }
+        .type h3{
+            width: 100%;
+            color: blue;
+            font-size: 25px;
+            
+
+        }
+        .type .types{
+
+            background-color:#014b4b;
+            width: 100%;
+            text-align: center;
+
+
+            
+
+        }
+        .types a{
+            font-size: 19px;
+            text-decoration: none;
+            color:#00fc22;
+            
+        }
+        .back{
+            width: 100%;
+            position:absolute;
+            display: block;
+
+           height: 1400px;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8y0lJ_3buyphhKMM-Fpp4PuVwSqQR_H-13bX4LT_9zDMIjHCUVwdC_Yi6SzhimVdbkC4&usqp=CAU');
+            background-repeat:no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+        }
+        .define{
+            width: 75%;
+            height: 300px;
+            background: transparent;
+            margin: auto;
+        }
+        .define .def h3{
+            color: #ce1616;
+        }
+        .define .def p{
+            font-size: 25px;
+            text-align:left;
+            color: #f7fafd;
+        }
+
+
+
+    
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="sub_main">
+            <h1>Attacks & Countermeasures</h1>
+        </div>   
+            <div class="what">
+                <h3>what is  cyber Attacks?</h3>
+                <div class="ans">
+                    <p>
+                        A cyber attack is performed with malicious intent when a threat actor attempts to exploit a vulnerability or weakness in a system or individuals of an organization. These attacks threaten to steal, alter, destroy, disable or gain access to or make use of an unauthorized asset.
+                    </p><img src="images/Cyber-Security.png">
+                </div>
+            </div>
+            <div class="type">
+                <div class="types">
+                    <h3>Types of Attacks</h3>
+                    <ul>
+                        <li >
+                            <a href="#net">Malware Attack</a>
+                        </li>
+                        <li>
+                            <a href="#infor">Phishing Attacks</a>
+                        </li>
+                        <li id="app">
+                            <a href="#app">Password Attacks</a>
+                        </li>
+                        <li id="oper">
+                            <a href="#oper">Man in the Middle Attacks</a>
+                        </li>
+                        <li id="end">
+                            <a href="#end">SQL Injection Attacks</a>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+                <div class="back">
+
+                    <div class="define">
+                        <div id="net" class="def">
+                            <h3>Malware Attacks</h3>
+                            <p>
+                                This is one of the most common types of cyberattacks. “Malware” refers to malicious software viruses including worms, spyware, ransomware, adware, and trojans. 
+                            </p>
+                        </div>
+                        <div id="infor" class="def">
+                            <h3>Phishing Attacks</h3>
+                            <p>
+                                Phishing attacks are one of the most prominent widespread types of cyberattacks. It is a type of social engineering attack wherein an attacker impersonates to be a trusted contact and sends the victim fake mails. 
+                            </p>
+                        </div>
+                        <div id="app" class="def">
+                            <h3>Password Attacks</h3>
+                            <p>
+                                It is a form of attack wherein a hacker cracks your password with various programs and password cracking tools like Aircrack, Cain, Abel, John the Ripper, Hashcat, etc. There are different types of password attacks like brute force attacks, dictionary attacks, and keylogger attacks.
+                            </p>
+                        </div>
+                        <div id="opera" class="def">
+                            <h3>Man in the Middle Attacks</h3>
+                            <p>
+                                A Man-in-the-Middle Attack (MITM) is also known as an eavesdropping attack. In this attack, an attacker comes in between a two-party communication, i.e., the attacker hijacks the session between a client and host. By doing so, hackers steal and manipulate data.
+                            </p>
+                        </div>
+                        <div id="end" class="def">
+                            <h3>SQL Injection Attacks</h3>
+                            <p>
+                                A Structured Query Language (SQL) injection attack occurs on a database-driven website when the hacker manipulates a standard SQL query. It is carried by injecting a malicious code into a vulnerable website search box, thereby making the server reveal crucial information.  
+                            </p>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </div>
+</body>
+</html>
